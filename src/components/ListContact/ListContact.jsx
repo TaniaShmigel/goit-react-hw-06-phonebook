@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { getContacts, getFilter } from 'redux/selectors';
+import {List} from './ListContact.styled'
 import ElementContact from '../ElementContact';
 
 const ListContact = () => {
@@ -24,7 +25,7 @@ const ListContact = () => {
       );
     });
   };
-  return <ul>{makeList(makeFiltredContacts())}</ul>;
+  return <List>{makeList(makeFiltredContacts())}</List>;
 };
 
 export default ListContact;

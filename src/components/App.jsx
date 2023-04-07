@@ -1,18 +1,19 @@
 import { GlobalStyle } from './GlobalStyle';
 
+import { Container, TitleContact, TitleForm } from './App.styled';
 import FormContact from './FormContact';
 import SearchFilter from './SearchFilter';
 import ListContact from './ListContact';
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <GlobalStyle />
-      <h1>Phonebook</h1>
+      <TitleForm>Phonebook</TitleForm>
       <FormContact />
-      <h2>Contacts</h2>
+      <TitleContact>Contacts</TitleContact>
       <SearchFilter />
       <ListContact />
-    </div>
+      </Container>
   );
 }

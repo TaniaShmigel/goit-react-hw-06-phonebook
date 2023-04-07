@@ -47,6 +47,7 @@ const FormContact = () => {
     );
     if (check) {
       alert(`${values.name} is already in contacts`);
+      return;
     }
     dispatch(addContact(values));
     resetForm({
